@@ -2,8 +2,51 @@ body {
    background-color: white;
 }
 
-body div {
+body div div {
    visibility: hidden;
+}
+
+div#viewport {
+    border: 5px solid black;
+    width: 420px;
+    height: 380px;
+    position:relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+div div {
+    width: 420px;
+    height: 380px;
+    position: absolute;
+    -webkit-transition: all 0.5s;
+}
+div div h1 {
+   margin-top: 0;
+}
+
+/*
+div.left div {
+    -webkit-transform: translateX(100%);
+}
+
+div.right div {
+    -webkit-transform: translateX(-100%);
+}
+*/
+
+div div:nth-child(1) {
+    background: blue;
+    left: 0;
+}
+
+div div:nth-child(2) {
+    background: red;
+    left: 0;
+}
+div div:nth-child(3) {
+    background: green;
+    left: 0;
 }
 
 .current_page {
