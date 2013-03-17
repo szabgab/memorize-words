@@ -19,37 +19,32 @@ div div {
     width: 420px;
     height: 380px;
     position: absolute;
-    -webkit-transition: all 0.5s;
+    -webkit-transition: all 0s;
 }
 div div h1 {
    margin-top: 0;
 }
 
-/*
-div.left div {
-    -webkit-transform: translateX(100%);
-}
-
-div.right div {
-    -webkit-transform: translateX(-100%);
-}
-*/
-
 div div:nth-child(1) {
-    background: blue;
+    /* background: blue; */
     left: 0;
 }
 
 div div:nth-child(2) {
-    background: red;
+    /* background: red; */
     left: 0;
 }
 div div:nth-child(3) {
-    background: green;
+    /* background: green; */
     left: 0;
 }
 
 .current_page {
    visibility: visible;
 /*   background-color: black; */
+}
+
+.label {
+   background-color: black;
+   width: 300px;
 }
